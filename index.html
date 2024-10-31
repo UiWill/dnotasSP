@@ -70,7 +70,7 @@
                     <a href="#inicio">INÍCIO</a>
                     <a href="#sobre">SOBRE</a>
                     <a href="#servicos">SERVIÇOS</a>
-                    <a href="#portfolio">CLIENTES</a>
+                    <a href="#portfolio">PLANOS</a>
                     <a href="#contato">CONTATO</a>
                 </nav>
             </div>
@@ -213,95 +213,74 @@
         </section>
         <!--Fim FREE YOUR MIND-->
 
-        <!--Portfolio-->
+        <!--planos-->
+
+        
         <section id="portfolio" class="portfolio">
             <div class="container-portfolio" data-aos="fade-up" data-aos-duration="1000">
                 <div class="headline-portfolio">
-                    <h1 class="titulo">Clientes</h1>
-                    <span class="descricao">Vejá alguns dos depoimentos de nossos clientes!</span>
+                    <h1 class="titulo">Planos</h1>
+                    <span class="descricao">Opções de Serviço</span>
                 </div>
                 <div class="container-case">
                     <!--Case 1-->
                     <div class="case1" data-aos="fade-right" data-aos-delay="200">
-                        <div class="imagens-case">
-                            <div class="slide">
-                                <i class="bi bi-chevron-left prev"></i>
-                                <img src="assets/img/LM.png" alt="">
-                                <img src="assets/img/LM.png" alt="">
-                                <img src="assets/img/LM.png" alt="">
-                                <i class="bi bi-chevron-right next"></i>
+                        <div class="pricing-container">
+                            <!-- Basic Plan -->
+                            <div class="pricing-box">
+                                <h2 class="plan-name">Emissão de Notas Fiscais</h2>
+                                <div class="price">R$100/mês</div>
+                                <ul class="features">
+                                    <li>Pacote basico</li>
+                                    <li>Emissão de até 5 notas fiscais</li>
+                                    <li>R$ 30,00 por cada nota fiscal adicional</li>
+                                </ul>
+                              
+                            </div>
+                    
+                            <!-- Pro Plan -->
+                            <div class="pricing-box">
+                                <h2 class="plan-name">Serviço Completo de BPO Fiscal</h2>
+                                <div class="price">$R$350/mês</div>
+                                <ul class="features">
+                                    <li>Pacote Completo</li>
+                                    <li>Emissão ilimitada de notas fiscais</li>
+                                    <li>Serviço completo de terceirização de processos fiscais, garantindo conformidade e eficiência nos processos tributários</li>
+                                </ul>
+                             
+                            </div>
+                    
+                            <!-- Enterprise Plan -->
+                            <div class="pricing-box">
+                                <h2 class="plan-name">Taxa de Adesão (Instalação)</h2>
+                                <div class="price">R$500/Unica vez</div>
+                                <ul class="features">
+                                    <li>Licença de Adesão</li>
+                                    <li>Aplicável a ambos os planos</li>
+
+                                </ul>
+                            
                             </div>
                         </div>
-                        <div class="textos-case">
-                            <div class="conteudo-textos-case">
-                                <h1>Lívia Multiplace</h1>
-                                <p>Perfeito para quem quer segurança e agilidade! Trabalhar com a DNOTAS foi uma das melhores decisões que tomei. Eles emitem todas as notas fiscais e fazem o acompanhamento em tempo real, além de manterem a comunicação direta no WhatsApp. O suporte ao contador também é excelente, sempre com as informações organizadas e completas. É um serviço essencial para qualquer empresário(a) que quer se focar nas vendas e ter a certeza de que tudo está em conformidade."</p>
-                                <span>Loja de roupas</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Case 2-->
-                    <div class="case2" data-aos="fade-left" data-aos-delay="300">
-                        <div class="textos-case">
-                            <div class="conteudo-textos-case">
-                                <h1>    DONA FIA</h1>
-                                <p>Simplificou minha vida! Desde que comecei a usar o serviço de emissão de notas fiscais da DNOTAS, ganhei muito mais tempo para me dedicar ao meu negócio. A equipe é super eficiente, sempre disponível para tirar dúvidas, e o atendimento pelo WhatsApp facilita demais. Além disso, sinto uma segurança enorme com relação à fiscalização, pois sei que está tudo sendo feito corretamente. Recomendo para qualquer comerciante que deseja tranquilidade e mais liberdade para crescer!</p>
-                                <span>Restaurante</span>
-                            </div>
-                        </div>
-                        <div class="imagens-case">
-                            <div class="slide">
-                                <i class="bi bi-chevron-left prev"></i>
-                                <img src="assets/img/DF.png" alt="">
-                                <img src="assets/img/DF.png" alt="">
-                                <img src="assets/img/DF.png" alt="">
-                                <i class="bi bi-chevron-right next"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Case 3-
-                    <div class="case3" data-aos="fade-right" data-aos-delay="400">
-                        <div class="imagens-case">
-                            <div class="slide">
-                                <i class="bi bi-chevron-left prev"></i>
-                                <img src="assets/img/imagem.png" alt="">
-                                <img src="assets/img/imagem.png" alt="">
-                                <img src="assets/img/imagem.png" alt="">
-                                <i class="bi bi-chevron-right next"></i>
-                            </div>
-                        </div>
-                        <div class="textos-case">
-                            <div class="conteudo-textos-case">
-                                <h1>CLIENTE</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt similique quibusdam expedita magnam enim hic illum? Laudantium, deserunt?</p>
-                                <span>Tipo do serviço</span>
-                            </div>
-                        </div>
+                    
+                    <script>
+                    // Add smooth hover effects and button click animation
+                    document.querySelectorAll('.cta-button').forEach(button => {
+                        button.addEventListener('click', function(e) {
+                            e.preventDefault();
+                            this.style.transform = 'scale(0.95)';
+                            setTimeout(() => {
+                                this.style.transform = 'scale(1)';
+                            }, 200);
+                        });
+                    });
+                    </script>
                     </div>
                    
-                    <div class="case4" data-aos="fade-left" data-aos-delay="500">
-                        <div class="textos-case">
-                            <div class="conteudo-textos-case">
-                                <h1>CLIENTE</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt similique quibusdam expedita magnam enim hic illum? Laudantium, deserunt?</p>
-                                <span>Tipo do serviço</span>
-                            </div>
-                        </div>
-                        <div class="imagens-case">
-                            <div class="slide">
-                                <i class="bi bi-chevron-left prev"></i>
-                                <img src="assets/img/imagem.png" alt="">
-                                <img src="assets/img/imagem.png" alt="">
-                                <img src="assets/img/imagem.png" alt="">
-                                <i class="bi bi-chevron-right next"></i>
-                            </div>
-                        </div>
-                    </div>
-                -->
                 </div>
             </div>
         </section>
-        <!--Fim Portfolio-->
+        <!--planos-->
 
         <!--Contato-->
         <section id="contato" class="contato">

@@ -832,7 +832,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .headline-portfolio {
@@ -860,23 +860,21 @@ a {
 
 .container-case {
     width: 100%;
-    height: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    gap: 8rem;
+    align-items: center;
+    gap: 2rem;
 }
 
 .case1,
 .case2,
 .case3,
 .case4 {
-    width: 100%;
-    height: 70vh;
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 2rem;
+    max-width: 1200px; /* limite de largura para centralizar */
+    width: 100%;
 }
 
 .imagens-case {
@@ -1219,4 +1217,107 @@ a {
 
 .credits-column p {
     margin: 0.2rem 0;
+}
+
+
+
+
+
+
+
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    max-width: 1200px;
+}
+
+.pricing-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.pricing-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+}
+
+.plan-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #2d3436;
+}
+
+.price {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0984e3;
+    margin-bottom: 1.5rem;
+}
+
+.features {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.features li {
+    margin-bottom: 0.8rem;
+    color: #636e72;
+    display: flex;
+    align-items: center;
+}
+
+.features li::before {
+    content: '✓';
+    color: #00b894;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.cta-button {
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: opacity 0.3s ease;
+}
+
+.cta-button:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .pricing-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .pricing-box {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 2rem;
+    }
 }
