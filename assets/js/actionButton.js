@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Ajusta para garantir que o site comece no topo ao recarregar
-    if (window.location.hash !== '#planos') {
-        window.location.hash = '#planos';
+    if (window.location.hash !== '#inicio') {
+        window.location.hash = '#inicio';
     }
 
     const backToTopButton = document.getElementById('backToTop');
