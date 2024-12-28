@@ -385,10 +385,19 @@
 
     <!--JavaScript-->
     <script src="assets/js/header.js"></script>
-    <script src="assets/js/actionButton.js"></script>
+   <!-- <script src="assets/js/actionButton.js"></script>-->
     <script src="assets/js/menu.js"></script>
     <script src="assets/js/slideSobre.js"></script>
     <script src="assets/js/slidePortfolio.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const hash = window.location.hash;
+            if (hash && document.querySelector(hash)) {
+                document.querySelector(hash).scrollIntoView({ behavior: "smooth" });
+            }
+        });
+    </script>
+    
 
 </body>
 
