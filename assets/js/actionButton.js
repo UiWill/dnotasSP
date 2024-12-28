@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Ajusta para garantir que o site comece no topo ao recarregar
-    if (window.location.hash !== '#inicio') {
-        window.location.hash = '#inicio';
+    if (window.location.hash !== '#planos') {
+        window.location.hash = '#planos';
     }
 
     const backToTopButton = document.getElementById('backToTop');
@@ -38,20 +38,5 @@ document.addEventListener('DOMContentLoaded', function () {
     // Ação ao clicar no botão do WhatsApp
     whatsappButton.addEventListener('click', function () {
         window.location.href = 'https://wa.me/553791979016';
-    });
-
-    // Navegação suave para as seções
-    document.querySelectorAll('.nav-menu a').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href').substring(1);
-            const targetElement = document.getElementById(targetId);
-            if (targetElement) {
-                window.scrollTo({
-                    top: targetElement.offsetTop - 80, // Ajuste conforme a altura do cabeçalho fixo
-                    behavior: 'smooth'
-                });
-            }
-        });
     });
 });
