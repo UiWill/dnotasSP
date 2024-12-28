@@ -391,22 +391,6 @@
     <script src="assets/js/menu.js"></script>
     <script src="assets/js/slideSobre.js"></script>
     <script src="assets/js/slidePortfolio.js"></script>
-    
-    <script>
-        window.addEventListener('load', function() {
-          if (window.location.hash) {
-            // Se a URL tiver o hash #planos
-            const target = document.querySelector(window.location.hash);
-            if (target) {
-              // Rola suavemente até o elemento com o id especificado
-              window.scrollTo({
-                top: target.offsetTop - 80, // Ajuste de 80px para o topo da tela (se necessário)
-                behavior: 'smooth' // Rolagem suave
-              });
-            }
-          }
-        });
-      </script>
 
 </body>
 
