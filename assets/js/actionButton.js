@@ -1,17 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Ajusta para garantir que a página vá para a seção correta, dependendo do hash na URL
-    if (window.location.hash && window.location.hash !== '#inicio') {
-        // Se o hash não for '#inicio', a página deve rolar até o elemento correspondente
-        const targetElement = document.querySelector(window.location.hash);
-        if (targetElement) {
-            window.scrollTo({
-                top: targetElement.offsetTop - 80, // Ajuste para uma posição adequada, caso necessário
-                behavior: 'smooth'
-            });
-        }
-    }
-
-    const backToTopButton = document.getElementById('backToTop');
     const whatsappButton = document.getElementById('whatsappButton');
 
     // Função para exibir ou esconder os botões ao rolar a página
